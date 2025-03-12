@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ozape55yb-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ozape55yb-python 
+  name: ozape55yb-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: ozape55yb-python 
